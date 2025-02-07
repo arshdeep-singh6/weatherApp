@@ -4,6 +4,7 @@ let temp;
 let desc;
 let windSpeed;
 let weatherIcon;
+const weatherData = document.getElementById('weatherData');
 btn.addEventListener('click', () => {
     
     const city = input.value;
@@ -21,11 +22,12 @@ btn.addEventListener('click', () => {
             document.getElementById('temp').textContent = 'Temp: ' + temp + '°C';
             document.getElementById('desc').textContent = desc;
             document.getElementById('windSpeed').textContent = 'Wind Speed: ' + windSpeed + 'm/s';
-            document.getElementById('icon');
+            let icon = document.getElementById('icon');
             icon.src =  `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
         })
         .catch(error => {
             console.log(error);
+
         });
 
         

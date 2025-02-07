@@ -12,9 +12,9 @@ body{
 }
 
 #weatherCont{
-    background-color: rgb(248, 248, 248);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    color: #000;
+    background-color: rgb(77, 93, 242);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    color: #ffffff;
     width: 400px;
     height: 500px;
     margin: 5em;
@@ -22,15 +22,15 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     border-radius: 16px;
+    text-align: center;
+    line-height: 1.5;
 }
 
 #search{
     padding: 5px 10px;
     margin: 20px;
     border-radius: 10px;
-    /* border: none; */
 }
 
 #search:focus{
@@ -43,13 +43,14 @@ body{
     background-color: rgb(255, 255, 255);
     color: rgb(75, 73, 239);
     border:2px solid rgb(75, 73, 239);
+    cursor: pointer;
 }
 
 #searchBtn{
     padding: 7px 10px;
     border-radius: 10px;
-    background-color: rgb(75, 73, 239);
-    color: #fff;
+    background-color: rgb(255, 255, 255);
+    color: #0011ff;
     border:2px solid transparent;
 }
 
@@ -65,4 +66,8 @@ body{
         margin: 1px;
     }
     
+}
+
+.hidden{
+    display: none;
 }
